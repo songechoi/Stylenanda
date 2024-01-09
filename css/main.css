@@ -1,0 +1,160 @@
+/* 메인스타일 */
+.main{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.bx-wrapper{
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;      
+}
+.bx-wrapper .bx-pager{
+  bottom: 30px;
+}
+.bx-controls-direction{
+  display: none;
+}
+.main-banner{
+  width: 100%;      
+}
+
+.main-img{
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+.main-img+.sec{
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+.main-img+.sec a{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
+.main-img+.sec p,
+.main-img+.sec div{
+  width: 50%;
+}
+.main-img+.sec .img-box{
+  width: 15%;
+}
+.main-img+.sec p:last-of-type{
+  text-align: right;
+  text-transform: capitalize;
+}
+
+
+.slider-nav{
+  width: 20%;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  background: white;
+}
+.slider-nav h2{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.8em;
+  line-height: 2em;
+  color: #333;
+}
+.slider-nav li{
+  margin-bottom: 6px;
+  padding: 6px 0;
+  font-size: 1.2em;
+}
+.slider-nav li:first-child{
+  border-bottom: 1px solid #333;
+}
+.slider-nav li span{
+  font-size: 1.2em;
+}
+
+
+.sub-slider{
+  width: 80%;      
+  border-bottom: 1px solid black;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.sub-slider .img-box{
+  width: 22%;
+  border-left: 1px solid black;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.sub-slider .img-box:nth-child(2){
+  left: 22%;
+}
+.sub-slider .img-box:nth-child(3){
+  left: 44%;
+}
+.sub-slider .img-box:nth-child(4){
+  left: 66%;
+}
+.sub-slider .img-box:nth-child(5){
+  left: 88%;
+}
+.sub-slider .img-box:nth-child(6){
+  left: 110%;
+}
+.sub-slider .img-box:nth-child(7){
+  left: 132%;
+}
+
+.m-img{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333%;
+  border-bottom: 2px solid black;
+  padding: 60px 0 100px;
+}
+.m-img h2{
+  order: 2;
+}
+.m-img .img-box{
+  order: 1;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+
+.popup{
+  display: none;
+
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+  background: #666;
+  color: #fff;
+}
+.popup-bottom{
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+}
+.popup-bottom label{
+  margin-right: 20px;
+}
+.btn-close{
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+}
+.btn-close::after{
+  content: 'X';
+  display: inline;
+  margin-left: 6px;
+}
